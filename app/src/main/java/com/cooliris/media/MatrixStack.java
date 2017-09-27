@@ -142,10 +142,6 @@ public class MatrixStack {
         glTranslatef(fixedToFloat(x), fixedToFloat(y), fixedToFloat(z));
     }
 
-    public void getMatrix(float[] dest, int offset) {
-        System.arraycopy(mMatrix, mTop, dest, offset, MATRIX_SIZE);
-    }
-
     private float fixedToFloat(int x) {
         return x * (1.0f / 65536.0f);
     }
