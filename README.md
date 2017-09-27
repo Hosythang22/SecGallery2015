@@ -1,2 +1,2 @@
-# SecGallery2015
-SecGallery2015
+# Gallery
+Gallery
