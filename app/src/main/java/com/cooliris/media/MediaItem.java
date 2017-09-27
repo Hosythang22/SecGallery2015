@@ -118,4 +118,8 @@ public final class MediaItem {
         mReverseGeocodedLocation = reverseGeocoder.getReverseGeocodedLocation(mLatitude, mLongitude, 2);
         return mReverseGeocodedLocation;
     }
+
+    public void setDisplayMimeType1(final String displayMimeType) {
+        mDisplayMimeType = displayMimeType;
+    }
 }
