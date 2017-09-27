@@ -234,9 +234,6 @@ public class MediaSet {
     /**
      * @return true if the title string is truncated.
      */
-    public boolean isTruncated() {
-        return (mTitleString != null && !mTitleString.equals(mTruncTitleString));
-    }
 
     /**
      * @return true if timestamps are available for this set.
