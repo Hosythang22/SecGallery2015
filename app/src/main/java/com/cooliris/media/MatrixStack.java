@@ -70,12 +70,6 @@ public class MatrixStack {
         }
     }
 
-    public void glLoadMatrixx(IntBuffer m) {
-        for (int i = 0; i < MATRIX_SIZE; i++) {
-            mMatrix[mTop + i] = fixedToFloat(m.get());
-        }
-    }
-
     public void glMultMatrixf(float[] m, int offset) {
         System.arraycopy(mMatrix, mTop, mTemp, 0, MATRIX_SIZE);
         Matrix.multiplyMM(mMatrix, mTop, mTemp, 0, m, offset);
