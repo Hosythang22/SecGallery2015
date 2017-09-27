@@ -103,9 +103,6 @@ public final class MediaItem {
         return (mDisplayMimeType == null) ? "" : mDisplayMimeType;
     }
 
-    public void setDisplayMimeType(final String displayMimeType) {
-        mDisplayMimeType = displayMimeType;
-    }
 
     public String getReverseGeocodedLocation(ReverseGeocoder reverseGeocoder) {
         if (mReverseGeocodedLocation != null) {
